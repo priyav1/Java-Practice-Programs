@@ -8,5 +8,6 @@ public class MonkeyTrouble {
 
     public static void main(String[] args) {
         System.out.println(monkeyTrouble(false,false));
+        System.out.println("The End!");
     }
 }
