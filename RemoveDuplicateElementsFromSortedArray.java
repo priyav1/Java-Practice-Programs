@@ -21,15 +21,16 @@ public class RemoveDuplicateElementsFromSortedArray {
 		if(nums.length<=1){
 			return nums.length;
 		}
-		int length = nums.length;
-		for(int i=0,j=1;j<nums.length;i++,j++)
+		int i=0;
+		for(int j=1;j<nums.length;j++)
 		{
-			if(nums[i]==nums[j])
+			if(nums[i]!=nums[j])
 			{
-				
+				i++;
+				nums[i] = nums[j];
 			}
 		}
-		return 1;
+		return i+1;
 	}
 	
 	public static void main(String args[])
